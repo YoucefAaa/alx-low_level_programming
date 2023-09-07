@@ -1,6 +1,9 @@
 #include <stdio.h>
 /**
- *print a phrase
+ * main - a function
+ *
+ * Description: print a phrase
+ * Return: allways a 0
  */
 int main(void)
 {
