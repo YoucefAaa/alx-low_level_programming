@@ -3,7 +3,7 @@
 int main(void)
 {
 	char start = 'a';
-	
+	int i;
 	for (int i = 0; i < 26; i++)
 	{
 		putchar(start + i);
