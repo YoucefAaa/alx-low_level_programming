@@ -1,10 +1,10 @@
 #include <stdio.h>
-  /**
-    * main - function
-    *
-    * Descriptiot: a func
-    * Return: a 0
-    */
+/**
+  * main - function
+  *
+  * Descriptiot: a func
+  * Return: a 0
+  */
 int main(void)
 {
 	char start = 'a';
