@@ -12,7 +12,9 @@ int _abs(int n)
 {
 	int y;
 
-	y = abs(n);
-	_putchar(y);
-	return (0);
+	if (n >= 0)
+		return (n);
+	else
+		y = abs(n);
+		_putchar(abs(n));
 }
