@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - a func
+ * print_alphabet_x10 - a func
  *
  * Description: a good alphabet printer
  * Return: a 0
@@ -19,7 +19,7 @@ void print_alphabet_x10(void)
 		{
 			_putchar(start + i);
 		}
-	
+
 	_putchar('\n');
 
 	}
