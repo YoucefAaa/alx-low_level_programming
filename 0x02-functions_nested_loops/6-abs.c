@@ -10,11 +10,12 @@
 
 int _abs(int n)
 {
-	int y;
 
 	if (n >= 0)
 		return (n);
 	else
-		y = abs(n);
+	{
+		int y = abs(n);
 		_putchar(abs(n));
+	}
 }
