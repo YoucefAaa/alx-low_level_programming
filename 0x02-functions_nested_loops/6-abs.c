@@ -13,10 +13,5 @@ int _abs(int n)
 
 	if (n >= 0)
 		return (n);
-	else
-	{
-		int y = abs(n);
-		_putchar(y);
-	}
-	return (0);
+	return (int abs(n);
 }
