@@ -18,4 +18,5 @@ int _abs(int n)
 		int y = abs(n);
 		_putchar(y);
 	}
+	return (0);
 }
