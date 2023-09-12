@@ -10,10 +10,11 @@ int print_last_digit(int n)
 {
 	int y = n % 10;
 
-	if (n <= 9)
-		return (n);
-	else if (n <= 99)
-		return (y);
-	else
-		return (n % 100);
+	if (n < 0)
+		n = -n;
+	if (y < 0)
+		y = -y;
+	
+	_putchar(y, '0');
+	return (y);
 }
