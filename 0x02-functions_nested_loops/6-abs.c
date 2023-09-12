@@ -16,6 +16,6 @@ int _abs(int n)
 	else
 	{
 		int y = abs(n);
-		_putchar(abs(n));
+		_putchar(y);
 	}
 }
