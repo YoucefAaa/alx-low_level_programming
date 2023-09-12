@@ -8,8 +8,12 @@
 
 int print_last_digit(int n)
 {
-	int y = n % 20;
+	int y = n % 10;
 
-	_putchar(y);
-	return (0);
+	if (x <= 9)
+		return (x);
+	else if (x <= 99)
+		return (y);
+	else
+		return (n % 100)
 }
