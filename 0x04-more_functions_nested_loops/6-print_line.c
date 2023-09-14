@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-  *
-  *
+  * print_line - youa aer not suposed to be cheating
+  * @n : the lenth of the line
   *
   *
   */
