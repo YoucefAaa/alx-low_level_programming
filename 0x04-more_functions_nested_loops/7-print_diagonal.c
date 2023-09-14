@@ -1,14 +1,14 @@
 #include "main.h"
 /**
-  *
-  8
-  *
+  * print_diagonal - a func
+  * @n : a char
   *
   */
 
 void print_diagonal(int n)
 {
 	int i, j;
+
 	if (n <= 0)
 	{
 		_putchar('\n');
@@ -25,6 +25,5 @@ void print_diagonal(int n)
 			_putchar('\n');
 
 		}
-		_putchar('\n');
 	}
 }
