@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * print_most_numbers - a func to print all the numbers from 0 to 9 exept 4 and 2
+  * print_most_numbers - a func to print all the numbers from exept 4 and 2
   *
   */
 
