@@ -1,14 +1,14 @@
 #include <stdio.h>
 /**
+  * main - a func
   *
-  *
-  *
+  * Return: always a 0
   *
   */
 
-int main() 
+int main(void)
 {
-	for (int i = 1; i <= 100; i++) 
+	for (int i = 1; i <= 100; i++)
 	{
 	if (i % 3 == 0 && i % 5 == 0)
 		printf("fizzbuzz ");
@@ -20,6 +20,5 @@ int main()
 		printf("%d ", i);
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
-
