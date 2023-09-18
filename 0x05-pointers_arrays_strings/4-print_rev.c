@@ -7,6 +7,16 @@
  */
 void print_rev(char *s)
 {
-  char Rev[ ] = strrev(s)
-  puts(Rev);
+	int i;
+	int lenth = strlen(s);
+
+	for (i = 0 ; i < len / 2 ; i++)
+	{
+		char temp = s[i];
+
+		s[i] = s[lenth - i - 1];
+		s[lenth - i - 1] = temp;
+	}
+	puts(s);
+
 }
