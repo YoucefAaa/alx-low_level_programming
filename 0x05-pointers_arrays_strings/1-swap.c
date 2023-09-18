@@ -4,7 +4,7 @@
   * @a : a param
   * @b : a 2nd param
   */
-   
+
 void swap_int(int *a, int *b)
 {
 	int temp = *a;
