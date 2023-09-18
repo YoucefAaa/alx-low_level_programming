@@ -4,7 +4,8 @@
 void puts2(char *str)
 {
 	int i;
-	int lenth = strlen(str);
+	int lenth;
+	lenth = strlen(*str);
 
 	for (i = 0 ; i < lenth ; i++)
 	{
