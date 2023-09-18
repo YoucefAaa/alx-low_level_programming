@@ -10,7 +10,7 @@ void print_rev(char *s)
 	int i;
 	int lenth = strlen(s);
 
-	for (i = 0 ; i < len / 2 ; i++)
+	for (i = 0 ; i < lenth / 2 ; i++)
 	{
 		char temp = s[i];
 
