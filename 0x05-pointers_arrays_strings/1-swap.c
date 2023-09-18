@@ -1,13 +1,13 @@
 #include "main.h"
-#include <string.h>
 /**
- * _strlen - a func
- * @s : the Patan
- * 
- */
- 
-int _strlen(char *s)
+   * swap_int - a func
+   * @a : a param
+   * @b : a 2nd param
+   */
+   
+void swap_int(int *a, int *b)
 {
-  int lo = strlen(s);
-  return lo;
+    int temp = *a;
+    *a = *b;
+    *b = temp;
 }
