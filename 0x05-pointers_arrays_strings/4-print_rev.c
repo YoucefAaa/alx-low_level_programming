@@ -15,7 +15,7 @@ void print_rev(char *s)
 		char temp = s[i];
 
 		s[i] = s[lenth - i - 1];
-		s[lenth - i - 1] = temp;
+		s[lenth - i - 1 - 1] = temp;
 	}
 	puts(s);
 
