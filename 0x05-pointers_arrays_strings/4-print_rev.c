@@ -1,22 +1,22 @@
-#include "main.h"
-#include <stdio.h>
-#include <string.h>
+#include "holberton.h"
+
 /**
- * print_rev - a func
- * @s : a parameter 
+ * print_rev - a func to reverse a string
+ * @s : a param
+ *
+ * Return: a 0
  */
+
 void print_rev(char *s)
 {
-	int i;
-	int lenth = strlen(s);
+	int i, count = 0;
 
-	for (i = 0 ; i < lenth / 2 ; i++)
+	while (*s != '\0')
 	{
-		char temp = s[i];
-
-		s[i] = s[lenth - i - 1];
-		s[lenth - i - 1 - 1] = temp;
+		s++;
+		count++;
 	}
-	puts(s);
-
+	for (i = 0; i < count; i++)
+		_putchar(*(--s));
+	_putchar('\n');
 }
