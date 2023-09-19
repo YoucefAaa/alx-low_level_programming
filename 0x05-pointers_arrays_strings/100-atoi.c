@@ -8,7 +8,8 @@
   *
   */
 int _atoi(char *s) {
-	int i, res = 0;
+	int i;
+	int res = 0;
 	int sign = 1;
 	int length = strlen(s);
 	int foundDigit = 0;
