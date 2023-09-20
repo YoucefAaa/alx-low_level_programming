@@ -1,10 +1,10 @@
 #include "main.h"
 #include <string.h>
 /**
-  *
-  *
-  *
-  *
+  * _strcat - a func
+  * @dest : a param
+  * @src : a 2nd param
+  * Return: always a 0
   *
   */
 
