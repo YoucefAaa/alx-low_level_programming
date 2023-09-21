@@ -1,27 +1,27 @@
 #include "main.h"
-#include <string.h>
+
 /**
-  * leet - a func
-  * @s : a param
-  * Return: a var1
-  */
-
-char *leet(char *s)
+ * leet - 1337.
+ * @str: ed.
+ *
+ * Return: string.
+ */
+char *leet(char *str)
 {
-	int i;
+	int indx1 = 0, indx2;
+	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
-	for (i = 0 ; i < (int) strlen(s) ; i++)
+	while (str[indx1])
 	{
-		if (s[i] == 65 || s[i] == 97)
-			s[i] = 52;
-		else if (s[i] == 69 || s[i] == 101)
-			s[i] = 51;
-		else if (s[i] == 111 || s[i] == 79)
-			s[i] = 48;
-		else if (s[i] == 116 || s[i] == 84)
-			s[i] = 55;
-		else if (s[i] == 76 || s[i] == 108)
-			s[i] = 49;
+		for (indx2 = 0; indx2 <= 7; indx2++)
+		{
+			if (str[indx1] == leet[indx2] ||
+			    str[indx1] - 32 == leet[indx2])
+				str[indx1] = indx2 + '0';
+		}
+
+		indx1++;
 	}
-	return (s);
+
+	return (str);
 }
