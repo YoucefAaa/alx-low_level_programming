@@ -3,7 +3,7 @@
 /**
  * cap_string - a func
  * @str: a param
- *
+ * Return: a 0
  *
  */
 char *cap_string(char *str)
