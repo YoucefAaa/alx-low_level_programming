@@ -1,4 +1,4 @@
-#include <strin.h>
+#include <string.h>
 
 /**
  *_strchr - a func
