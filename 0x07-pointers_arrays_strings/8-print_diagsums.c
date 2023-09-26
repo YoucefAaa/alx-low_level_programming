@@ -8,13 +8,13 @@
 void print_diagsums(int *a, int size)
 {
 	int i;
-	int sum = 0;
-	int som = 0;
+	long sum = 0;
+	long som = 0;
 
 	for (i = 0 ; i < size ; i++)
 	{
-		sum += a[i * size + 1];
-		som += a[(i + 1) * size - 1 - i];
+		sum += *(a + i*size + i);
+		som += *(a + (i+1)*size - 1 - i);
 	}
-	printf("%i, %i\n", sum, som);
+	printf("%li, %li\n", sum, som);
 }
