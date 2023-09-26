@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
   * print_diagsums - a func
   * @a : an array
@@ -7,12 +7,14 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, sum = 0, som = 0;
+	int i;
+	int sum = 0;
+	int som = 0;
 
 	for (i = 0 ; i < size ; i++)
 	{
-		sum += a[i][i];
-		som += a[i][size - 1 - i];
+		sum += a[i * size + 1];
+		som += a[(i + 1) * size - 1 - i];
 	}
-	printf("%i, %i", sum, som);
+	printf("%i, %i\n", sum, som);
 }
