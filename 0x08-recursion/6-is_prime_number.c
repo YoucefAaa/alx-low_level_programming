@@ -1,18 +1,33 @@
-int rer(int x, int y)
+#include "main.h"
+
+/**
+ * check_prime - check for number is prime
+ * @a: int type
+ * @b: int type
+ * Return: always good
+ */
+int check_prime(int a, int b)
 {
-    if (x <= 1)
-        return 0;
-    if (x == 1)
-        return 1;
-    else
-    {
-        if (x % y == 0)
-            return 0;
-        else
-            return rer(y, y - 1);
-    }
+	if (a == b)
+		return (1);
+	else if  (b % a == 0)
+		return (0);
+	else
+		return  (check_prime(a + 1, b));
 }
+
+/**
+ * is_prime_number - return prime number or not
+ * @n: a param
+ * Return: always good
+ *
+ */
+
 int is_prime_number(int n)
 {
-	return (rer(n, 2));
+	if (n <= 1)
+		return (0);
+	if (n == 0)
+		return (0);
+	return (check_prime(2,  n));
 }
