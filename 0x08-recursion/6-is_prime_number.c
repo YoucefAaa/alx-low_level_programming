@@ -9,7 +9,7 @@ int rer(int x, int y)
         if (x % y == 0)
             return 0;
         else
-            return is_prime(y, i - 1);
+            return rer(y, y - 1);
     }
 }
 int is_prime_number(int n)
