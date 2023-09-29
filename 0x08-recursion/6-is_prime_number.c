@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * check_prime - check for number is prime
  * @a: int type
